@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@vant/area-data": "^1.5.1",
+    "axios": "^1.7.2",
+    "js-cookie": "^3.0.5",
+    "lodash": "^4.17.21",
+    "stylus": "^0.63.0",
+    "vant": "^4.9.1"
+  }
+}
