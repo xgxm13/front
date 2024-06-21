@@ -14,7 +14,7 @@
             name="name"
             label="用户名"
             placeholder="用户名"
-            :rules="[{ required: true, message: '请填写用户名' }]"
+            :rules="[{ required: true, message: '请填写用户名, 2-12位数字字母', namePattern }]"
           />
           
           <van-field
@@ -23,7 +23,7 @@
             name="password"
             label="密码"
             placeholder="密码"
-            :rules="[{ required: true, message: '请填写密码' }]"
+            :rules="[{ required: true, message: '请填写密码,6-12位数字字母组合', passwordPattern }]"
           />
 
           <van-field
@@ -82,6 +82,9 @@
 import { ref } from 'vue';
 import { areaList } from '@vant/area-data';
 import { registerApi } from "@/api/register.js"
+
+const namePattern = /^[a-zA-Z0-9]{2,12}$/
+const passwordPattern = /^[a-zA-Z0-9]{6,12}$/
 const form = ref({
   sex: '2',
 })

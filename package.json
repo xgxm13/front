@@ -2,6 +2,7 @@
   "dependencies": {
     "@vant/area-data": "^1.5.1",
     "axios": "^1.7.2",
+    "joi": "^17.4.0",
     "js-cookie": "^3.0.5",
     "lodash": "^4.17.21",
     "stylus": "^0.63.0",
